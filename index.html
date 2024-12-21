@@ -12,11 +12,16 @@
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
         }
-        .text-shadow {
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
         .hero-text-shadow {
             text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+        .button-glow {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 0 rgba(0,0,0,0);
+        }
+        .button-glow:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 20px -10px rgba(0,0,0,0.5);
         }
     </style>
 </head>
@@ -33,7 +38,7 @@
                 <div class="flex items-center space-x-8">
                     <a href="#location" class="text-sm font-medium text-gray-600 hover:text-black">Location</a>
                     <a href="#hours" class="text-sm font-medium text-gray-600 hover:text-black">Hours</a>
-                    <a href="#book" class="bg-black text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-900 transition-all hover:shadow-lg">Book Now</a>
+                    <a href="#book" class="bg-black text-white px-8 py-3 rounded-full text-sm font-medium button-glow">Book Now</a>
                 </div>
             </div>
         </div>
@@ -45,17 +50,19 @@
             <div class="absolute inset-0 bg-black/40 z-10"></div>
             <img src="images/barbershop.png" alt="Barbershop Interior" class="w-full h-full object-cover"/>
         </div>
-        <div class="relative z-20 text-center px-4 sm:px-6 lg:px-8 text-white py-32">
-            <h1 class="text-5xl sm:text-7xl font-bold tracking-tight mb-6 hero-text-shadow">
+        <div class="relative z-20 text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-white py-32">
+            <h1 class="text-5xl sm:text-7xl font-bold tracking-tight mb-8 hero-text-shadow">
                 The Best Damn Barbershop<br/>in All the South Bay
             </h1>
-            <p class="text-2xl sm:text-3xl mb-12 max-w-3xl mx-auto font-light hero-text-shadow bg-black/20 py-4 px-6 rounded-full inline-block">
+            <div class="mb-8">
+                <a href="#book" class="inline-block bg-black text-white px-10 py-4 rounded-full text-lg font-medium button-glow">
+                    Book Your Experience
+                </a>
+            </div>
+            <p class="text-2xl sm:text-3xl mx-auto font-light hero-text-shadow bg-black/20 py-4 px-6 rounded-full inline-block">
                 Premium cuts and straight razor shaves by master barbers.<br/>
                 Crafting confidence since 1956.
             </p>
-            <a href="#book" class="inline-block bg-white text-black px-10 py-4 rounded-full text-lg font-medium hover:bg-gray-100 transition-all hover:shadow-lg">
-                Book Your Experience
-            </a>
         </div>
     </div>
 
