@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="250" cy="250" r="240" fill="black"/>
+    <path d="M 50,250 A 200,200 0 1,1 450,250 A 200,200 0 1,1 50,250" fill="none" stroke="white" stroke-width="2"/>
+    <text x="250" y="150" font-family="Arial" font-size="48" fill="white" text-anchor="middle">LUNADA BAY</text>
+    <text x="250" y="350" font-family="Arial" font-size="48" fill="white" text-anchor="middle">BARBERS</text>
+    <text x="250" y="220" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Shave</text>
+    <text x="250" y="250" font-family="Arial" font-size="24" fill="white" text-anchor="middle">&amp;</text>
+    <text x="250" y="280" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Haircut</text>
+    <text x="100" y="250" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Est.</text>
+    <text x="400" y="250" font-family="Arial" font-size="24" fill="white" text-anchor="middle">1956</text>
+</svg>

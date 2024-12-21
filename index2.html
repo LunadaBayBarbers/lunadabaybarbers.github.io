@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lunada Bay Barbers - Est. 1956</title>
+  <meta 
+    name="description" 
+    content="Premium barbershop services in Palos Verdes Estates. Schedule your appointment today at Lunada Bay Barbers."
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 
+    Consider adding Tailwind CSS configuration for custom colors and font families.
+    You can also specify any Google Fonts or custom fonts here.
+  -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" 
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Optional: Light fade-in for sections */
+    .fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- NAVIGATION -->
+  <nav class="fixed w-full z-50 bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <!-- Logo / Brand -->
+      <div class="flex items-center">
+        <img 
+          src="logo.png" 
+          alt="Lunada Bay Barbers Logo" 
+          class="w-10 h-10 mr-3"
+        />
+        <span class="text-xl font-bold">Lunada Bay Barbers</span>
+      </div>
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-8">
+        <a href="#about" class="hover:text-blue-500 transition">About</a>
+        <a href="#location" class="hover:text-blue-500 transition">Location</a>
+        <a href="#hours" class="hover:text-blue-500 transition">Hours</a>
+        <a 
+          href="#book" 
+          class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition"
+        >
+          Book Now
+        </a>
+      </div>
+      <!-- Mobile Menu Button -->
+      <button 
+        class="md:hidden focus:outline-none" 
+        id="mobile-menu-button"
+        aria-label="Toggle Navigation"
+      >
+        <svg 
+          class="w-6 h-6" 
+          fill="none" 
+          stroke="currentColor" 
+          viewBox="0 0 24 24" 
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="2" 
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu (hidden by default) -->
+    <div 
+      class="md:hidden bg-white border-t border-gray-200 px-4 py-3 hidden" 
+      id="mobile-menu"
+    >
+      <a 
+        href="#about" 
+        class="block py-2 hover:text-blue-500 transition"
+      >
+        About
+      </a>
+      <a 
+        href="#location" 
+        class="block py-2 hover:text-blue-500 transition"
+      >
+        Location
+      </a>
+      <a 
+        href="#hours" 
+        class="block py-2 hover:text-blue-500 transition"
+      >
+        Hours
+      </a>
+      <a 
+        href="#book" 
+        class="block py-2 mt-2 bg-blue-500 text-white rounded-md text-center hover:bg-blue-600 transition"
+      >
+        Book Now
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="pt-20 md:pt-28 pb-16 bg-gradient-to-r from-blue-50 to-blue-100 fade-in">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <div class="flex flex-col items-center">
+        <img 
+          src="hero-image.png" 
+          alt="Barbershop" 
+          class="w-full max-w-lg rounded-lg shadow-lg mb-8 object-cover"
+        />
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Lunada Bay Barbers
+        </h1>
+        <p class="text-xl text-gray-700 mb-6">
+          Your neighborhood barbershop since 1956. Experience top-notch service in a cozy setting.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="#book" 
+            class="bg-blue-500 text-white px-8 py-3 rounded-md hover:bg-blue-600 transition"
+          >
+            Schedule Now
+          </a>
+          <a 
+            href="tel:3103752717" 
+            class="border border-blue-500 text-blue-500 px-8 py-3 rounded-md hover:bg-blue-500 hover:text-white transition"
+          >
+            Call Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-16 fade-in">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">About Us</h2>
+      <p class="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
+        We’ve been proudly serving the Palos Verdes Estates community for over half a century. 
+        At Lunada Bay Barbers, our team of skilled barbers is dedicated to providing 
+        exceptional cuts, shaves, and styling in a warm, welcoming environment.
+      </p>
+    </div>
+  </section>
+
+  <!-- LOCATION SECTION -->
+  <section 
+    id="location" 
+    class="bg-white py-16 border-t border-gray-100 fade-in"
+  >
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Find Us</h2>
+      <div class="text-center">
+        <p class="text-xl text-gray-700 mb-2">713 Yarmouth Road</p>
+        <p class="text-xl text-gray-700 mb-2">Palos Verdes Estates, CA 90274</p>
+        <a 
+          href="tel:3103752717" 
+          class="text-blue-500 hover:text-blue-600 text-lg"
+        >
+          (310) 375-2717
+        </a>
+      </div>
+      <!-- Optional: Map Embed or Image -->
+      <!--
+      <div class="mt-6">
+        <iframe ... ></iframe>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- HOURS SECTION -->
+  <section 
+    id="hours" 
+    class="bg-gray-50 py-16 fade-in"
+  >
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Hours of Operation</h2>
+      <div class="max-w-lg mx-auto grid grid-cols-2 gap-4 text-lg text-gray-700">
+        <div class="font-semibold">Monday - Friday</div>
+        <div>10:00 AM - 6:00 PM</div>
+        <div class="font-semibold">Saturday - Sunday</div>
+        <div>9:00 AM - 5:00 PM</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING SECTION -->
+  <section 
+    id="book" 
+    class="bg-white py-16 border-t border-gray-100 fade-in"
+  >
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Schedule an Appointment</h2>
+      <!-- Scheduling iframe -->
+      <div class="shadow-lg rounded-lg overflow-hidden">
+        <iframe 
+          src="https://app.acuityscheduling.com/schedule.php?owner=12005627"
+          width="100%"
+          height="800"
+          frameBorder="0"
+        >
+        </iframe>
+      </div>
+      <script 
+        src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" 
+        type="text/javascript"
+      ></script>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white py-12 mt-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Brand/Location -->
+        <div>
+          <h3 class="text-xl font-bold">Lunada Bay Barbers</h3>
+          <p class="mt-4 text-gray-300 leading-relaxed">
+            713 Yarmouth Road<br>
+            Palos Verdes Estates, CA 90274<br/>
+            (310) 375-2717
+          </p>
+        </div>
+        <!-- Social Links -->
+        <div>
+          <h3 class="text-xl font-bold">Follow Us</h3>
+          <div class="mt-4 flex space-x-4">
+            <a 
+              href="https://www.facebook.com/Lunada-Bay-Barbers-172611339455938/" 
+              class="hover:text-gray-300 transition"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
+            <a 
+              href="http://www.yelp.com/biz/lunada-bay-barbers-palos-verdes-estates" 
+              class="hover:text-gray-300 transition"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Yelp
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-gray-400 text-sm">
+        &copy; 2024 Lunada Bay Barbers. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE MENU SCRIPT -->
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
